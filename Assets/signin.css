@@ -1,0 +1,54 @@
+@import url(./vars.css);
+* {
+  margin: 0px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #082032;
+}
+header {
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  border: 1.5px solid;
+  background-color: #415461;
+  padding: 15px;
+  margin: 10px 0px 25px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+label {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: rgb(253, 250, 250);
+  margin-bottom: 5px;
+}
+
+button {
+  font-family: Roboto;
+  background-color: #ffc100;
+  font-weight: 1000;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  color: rgb(7, 7, 7);
+  border-radius: 5px;
+  border: #ffc100;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.info {
+  color: rgb(253, 252, 247);
+}
+.info P {
+  color: rgb(248, 248, 247);
+  text-decoration: underline;
+  font-size: 15px;
+}
