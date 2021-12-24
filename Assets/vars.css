@@ -1,0 +1,11 @@
+:root {
+  --main-clr: #ffc100;
+  --bg-clr-dark: #082032;
+  --bg-clr-light: #16374f;
+  --menu-bg-clr: #03111c;
+  --card-bg: #1f4663;
+  --white: #ffffff;
+
+  --main-font: "Roboto", sans-serif;
+  --headings-font: "Poppins", sans-serif;
+}
