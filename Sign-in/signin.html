@@ -13,37 +13,49 @@
     <link rel="stylesheet" href="../Assets/signin.css" />
     <title>Restauration-App</title>
   </head>
+
   <body>
     <header>
       <div class="box">
-        <div class="bText white">
-          <h1>
-            " One cannot think<br />
-            well, love well, sleep <br />, if one has not<br />
-            dined well ".
+        <div class="bText-white">
+          <h1>"One cannot think
+              well, love well, sleep
+               well,if one has not
+              dined well ".
           </h1>
           <p>Virginia Woolf, A Room of One's Own</p>
         </div>
       </div>
-
-      <div class="logo">
-        <img src="../mg.svg" alt="pic" />
-      </div>
     </header>
-    <main>
-      <div class="first-form">
-        <label for="email">username or email</label>
-        <input required class="email-input" type="text" id="email" />
-        <label for="password">your password</label>
-        <input required type="text" id="password" />
-      </div>
-      <div class="info">
-        <p>forget your email ?</p>
+    <div class="het">
+      <main>
+        <div class="terminal">
+          
+          <div class="logo">
+            <img src="../Images/mg.svg" alt="pic" />
+          </div>
+          <div class="first-form">
+            <div class="input__form">
+              <label for="email">username or email</label>
+              <input required class="email-input" type="text" id="email" />
+            </div>
 
-        <button type="submit" class="login">login</button>
-      </div>
-    </main>
+            <div class="input__form">
+              <label>your password</label>
+              <input required type="text" id="password" />
+            </div>
+          </div>
+          <div class="info">
+            <p class="form">forget your email ?</p>
+            <button type="submit" class="login">login</button>
+          </div>
+        
+        </div>
 
+      
+      </main>
+      
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
