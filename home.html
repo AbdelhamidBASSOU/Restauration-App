@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.3/dist/sweetalert2.all.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/home.css" />
+  </head>
+  <body>
+    <div class="back hidden"></div>
+
+    <nav class="hid navbar">
+      <div class="logo hidden">
+        <img src="./Images/logo.svg" />
+      </div>
+      <ul class="navLinks flex">
+        <li class="menu-item">
+          <a class="active" href="index.html">
+            <i class="bx bx-home-alt"></i>
+            Home
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <i class="bx bx-calendar-alt"></i>
+            Plans
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <i class="bx bx-user"></i>
+            Profil
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="grid">
+      <div class="chosen-dish relative">
+        <a href="index.html"><i class="bx bx-arrow-back absolute"></i></a>
+        <div class="overlay absolute"></div>
+        <img src="./Images/tajin-bg.jpg" alt="this is moroccan tajin" />
+      </div>
+      <div class="pad tj">
+        <h1 class="upper">tajin de poulet</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ab
+          repellendus cumque consectetur harum. Sed explicabo optio blanditiis,
+          porro, exercit.
+        </p>
+      </div>
+      <div class="pad ig flexx">
+        <h2 class="upper">ingredients:</h2>
+        <div>
+          <i class="active bx bxs-check-circle"></i>
+          <span>Lorem ipsum, dolor sit amet.</span>
+        </div>
+        <div>
+          <i class="active bx bxs-check-circle"></i>
+          <span>Lorem ipsum, dolor sit amet.</span>
+        </div>
+        <div>
+          <i class="active bx bxs-check-circle"></i>
+          <span>Lorem ipsum, dolor sit amet.</span>
+        </div>
+        <div>
+          <i class="active bx bxs-check-circle"></i>
+          <span>Lorem ipsum, dolor sit amet.</span>
+        </div>
+        <div>
+          <i class="active bx bxs-check-circle"></i>
+          <span>Lorem ipsum, dolor sit amet.</span>
+        </div>
+        <div>
+          <i class="active bx bxs-check-circle"></i>
+          <span>Lorem ipsum, dolor sit amet.</span>
+        </div>
+      </div>
+      <div class="pad bt">
+        <button id="get" type="button">Get</button>
+        <button id="rate" class="hidden rate" type="button">Rate</button>
+      </div>
+      <div class="review hidden">
+        <p class="upper review-name">tagin de poulet</p>
+        <h4>
+          4.2 / 5
+          <i class="active bx bxs-star"></i>
+        </h4>
+        <div class="stars">
+          <div class="rate-row flex">
+            <span>5 star</span>
+            <div class="rate-back relative">
+              <div data-rate="60" class="rate-range absolute"></div>
+            </div>
+          </div>
+          <div class="rate-row flex">
+            <span>4 star</span>
+            <div class="rate-back relative">
+              <div data-rate="15" class="rate-range absolute"></div>
+            </div>
+          </div>
+          <div class="rate-row flex">
+            <span>3 star</span>
+            <div class="rate-back relative">
+              <div data-rate="13" class="rate-range absolute"></div>
+            </div>
+          </div>
+          <div class="rate-row flex">
+            <span>2 star</span>
+            <div class="rate-back relative">
+              <div data-rate="10" class="rate-range absolute"></div>
+            </div>
+          </div>
+          <div class="rate-row flex">
+            <span>1 star</span>
+            <div class="rate-back relative">
+              <div data-rate="2" class="rate-range absolute"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./Assets/popups.js"></script>
+    <script src="./Assets/index.js"></script>
+  </body>
+</html>
