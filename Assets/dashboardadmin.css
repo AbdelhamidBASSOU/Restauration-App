@@ -122,6 +122,12 @@ ul {
 /*end general style*/
 
 @media screen and (min-width: 850px) {
+  .image {
+    width: 70px;
+  }
+  .image img {
+    width: 100%;
+  }
 
   .nb {
     display: none;
@@ -142,9 +148,8 @@ ul {
     display: flex;
     flex-direction: column;
   }
-  .gg h1 
-  {
-    color:var(--white);
+  .gg h1 {
+    color: var(--white);
   }
   .crd-tagin {
     width: 100%;
@@ -230,8 +235,7 @@ ul {
   }
   nav {
     position: absolute;
-    top:100%;
-
+    top: 100%;
   }
   /* .bar img {
     display: block;
@@ -314,7 +318,7 @@ ul {
   .navLinks .menu-item .bx {
     font-size: 27px;
     width: 45px;
-    margin-left:-5px;
+    margin-left: -5px;
   }
   .logo {
     margin-top: 1rem;
@@ -345,7 +349,7 @@ ul {
   .crd-tagin p,
   .crd-cos p {
     font-size: 30px;
-    color:var(--white);
+    color: var(--white);
   }
   .crd-tagin button,
   .crd-cos button {
