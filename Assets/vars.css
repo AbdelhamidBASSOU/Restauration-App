@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --main-clr: #ffc100;
   --bg-clr-dark: #f7f0f0;
   --bg-clr-light: #16374f;
@@ -9,9 +9,9 @@
   --main-font: "Roboto", sans-serif;
   --headings-font: "Poppins", sans-serif;
   --txt-clr: rgba(255, 255, 255, 0.75);
-}
+} */
 
-.dark-theme
+:root
 {
   --main-clr: #ffc100;
   --bg-clr-dark: #082032;
