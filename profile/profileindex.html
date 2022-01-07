@@ -4,7 +4,145 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    />
-    <link rel="stylesheet" href="../Restauration-project/Assets/home.css" />
+    <link rel="icon" type="image/x-icon" href="../Images/logo.svg" />
+
+    <link
+    href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  />
+  <title>Prophil</title>
+  
+    <link rel="stylesheet" href="../Assets/profile.css">
+
   </head>
+  <style>
+ 
+  </style>
+  <body>
+ 
+    <main>
+      <div class="top-section">
+        <img  src="../Images/user.png" alt="user image" />
+        <h1>charaf marghine</h1>
+        <br/>
+        <h2>student</h2>
+      </div>
+   
+      <div class="container">
+        <p style="color: wheat;" class="td">settings</p>
+      <div class="card-father">
+        <div class="card">
+          <i class="fas fa-user"></i>
+          <h2>my account</h2>
+        </div>
+        <div class="card dkm">
+          <i class="fas fa-moon"></i>
+          <h2>dark mode</h2>
+          <!-- Rounded switch -->
+<label class="switch">
+  <input id="tog" type="checkbox" >
+  <span class="slider round"></span>
+</label>
+        </div>
+        <div class="card">
+          <i class="fas fa-circle-notch"></i>
+          <h2>chosen dishes</h2>
+        </div>
+        <div class="card">
+          <i class="fas fa-exclamation-triangle"></i>
+          <h2>raport a preblem</h2>
+        </div>
+        <div class="card">
+          <i class="fas fa-sign-out-alt"></i>
+          <h2>log out</h2>
+        </div>
+      </div>
+      <form class="form-section">
+        <h2>public prophil</h2>
+        <label for="name">name</label>
+        <input type="text" id="name">
+        <label for="email">email</label>
+        <input type="email" id="email">
+        <label for="ps">password</label>
+        <p> old password</p>
+        <input type="text" id="ps">
+        <p>new password</p>
+        <input type="text" id="newps">
+        <p>confirm new password</p>
+        <input type="text" id="confirmps">
+        <button onclick="go();">update password</button>
+
+      </form>
+    <div class="user-img">
+        <img  src="../Images/user.png" alt="user image">
+      </div>
+        </div>
+          <!-- 
+       <div class="bar">
+      <img src="../Images/logo.svg" alt="" />
+      <div class="bar-icons">
+        <i class="fas fa-home "><a href="#">home</a></i>
+        <i class="fas fa-calendar-alt"><a href="#">calendar</a></i>
+        <i class="fas fa-user active"><a href="#">account</a></i>
+      </div>
+    </div>  -->
+
+
+
+    <nav class="navbar">
+      <div class="logo hidden">
+        <img src="../Images/logo.svg" />
+      </div>
+      <ul class="navLinks flex">
+        <li class="menu-item">
+          <a href="index.html">
+            <i class="bx bx-home-alt"></i><span class="mhid">Home</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="active" href="#">
+            <i class="bx bx-calendar-alt"></i><span class="mhid">calendar</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <i class="bx bx-user"></i><span class="mhid">account</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+ 
+  </main>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    
+      // swal("Update Password","your password has been updated successfly","success",{buttons:["yes","no"]});
+      function go()
+      {
+      swal(
+      {
+        title:"Update password",
+        text:"your password has been updated succeflly",
+        icon:"info",
+        button:"okey cool",
+        className:"tab"
+      })
+     }
+     document.querySelector(".form-section").addEventListener("submit", (e) => {
+      e.preventDefault()
+     })
+     let mytoggle=document.getElementById("tog");
+     mytoggle.onclick=function()
+     {
+       document.body.classList.toggle("dark-theme");
+     }
+  </script>
+
+  </body>
 </html>

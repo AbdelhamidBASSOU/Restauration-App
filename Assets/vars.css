@@ -1,11 +1,27 @@
 :root {
   --main-clr: #ffc100;
+  --bg-clr-dark: #f7f0f0;
+  --bg-clr-light: #16374f;
+  --menu-bg-clr: #03111c;
+  --card-bg: #93979b;
+  --white: #000000;
+  --black:#ffffff;
+  --main-font: "Roboto", sans-serif;
+  --headings-font: "Poppins", sans-serif;
+  --txt-clr: rgba(255, 255, 255, 0.75);
+}
+
+.dark-theme
+{
+  --main-clr: #ffc100;
   --bg-clr-dark: #082032;
   --bg-clr-light: #16374f;
   --menu-bg-clr: #03111c;
   --card-bg: #1f4663;
   --white: #ffffff;
-
+  --black:#000000;
   --main-font: "Roboto", sans-serif;
   --headings-font: "Poppins", sans-serif;
+
 }
+
