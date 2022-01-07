@@ -4,7 +4,158 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Assets/home.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="../Restauration-project/Assets/home.css" />
-    </head>
+  </head>
+  <body>
+    <div class="back hidden"></div>
+
+    <nav class="navbar">
+      <div class="logo hidden">
+        <img src="./Images/logo.svg" />
+      </div>
+      <ul class="navLinks flex">
+        <li class="menu-item">
+          <a class="active" href="index.html">
+            <i class="bx bx-home-alt"></i>
+            <span class="mhid">Home</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <i class="bx bx-calendar-alt"></i>
+            <span class="mhid">Plans</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <i class="bx bx-user"></i>
+            <span class="mhid">Profil</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="greeting">
+        <h2>Friday's dishes</h2>
+        <p>Good morning, This is the dish of the day, Enjoy your meal</p>
+      </div>
+
+      <div class="flex dishes">
+        <div class="dish flex">
+          <div class="logo">
+            <a href="home.html"
+              ><img src="./Images/tajin.png" alt="this is tajin"
+            /></a>
+          </div>
+          <div class="info">
+            <h3 class="dish-title">Tagine de poulet</h3>
+            <p class="dish-count">56/100</p>
+            <a href="home.html" class="hidden see-dish"
+              >See Dish Description</a
+            >
+          </div>
+        </div>
+        <div class="dish flex">
+          <div class="logo">
+            <img src="./Images/coucous.png" alt="this is couscous" />
+          </div>
+          <div class="info">
+            <h3>Couscous Viande</h3>
+            <p>81/100</p>
+            <a href="" class="hidden">See Dish Description</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ratings">
+        <h2>People's Review</h2>
+        <div class="reviews flex">
+          <div class="review">
+            <p class="upper review-name">tagin de poulet</p>
+            <h4>
+              4.2 / 5
+              <i class="active bx bxs-star"></i>
+            </h4>
+            <div class="stars">
+              <div class="rate-row flex">
+                <span>5 star</span>
+                <div class="rate-back relative">
+                  <div data-rate="60" class="rate-range absolute"></div>
+                </div>
+              </div>
+              <div class="rate-row flex">
+                <span>4 star</span>
+                <div class="rate-back relative">
+                  <div data-rate="15" class="rate-range absolute"></div>
+                </div>
+              </div>
+              <div class="rate-row flex">
+                <span>3 star</span>
+                <div class="rate-back relative">
+                  <div data-rate="13" class="rate-range absolute"></div>
+                </div>
+              </div>
+              <div class="rate-row flex">
+                <span>2 star</span>
+                <div class="rate-back relative">
+                  <div data-rate="10" class="rate-range absolute"></div>
+                </div>
+              </div>
+              <div class="rate-row flex">
+                <span>1 star</span>
+                <div class="rate-back relative">
+                  <div data-rate="2" class="rate-range absolute"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review">
+            <p class="upper review-name">couscous viande</p>
+            <h4>
+              3.7 / 5
+              <i class="active bx bxs-star"></i>
+            </h4>
+            <div class="stars">
+              <div class="rate-row flex">
+                <span>5 star</span>
+                <div class="rate-back relative">
+                  <div data-rate="40" class="rate-range absolute"></div>
+                </div>
+              </div>
+              <div class="rate-row flex">
+                <span>4 star</span>
+                <div class="rate-back relative">
+                  <div data-rate="20" class="rate-range absolute"></div>
+                </div>
+              </div>
+              <div class="rate-row flex">
+                <span>3 star</span>
+                <div class="rate-back relative">
+                  <div data-rate="20" class="rate-range absolute"></div>
+                </div>
+              </div>
+              <div class="rate-row flex">
+                <span>2 star</span>
+                <div class="rate-back relative">
+                  <div data-rate="10" class="rate-range absolute"></div>
+                </div>
+              </div>
+              <div class="rate-row flex">
+                <span>1 star</span>
+                <div class="rate-back relative">
+                  <div data-rate="10" class="rate-range absolute"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./Assets/index.js"></script>
+  </body>
 </html>
