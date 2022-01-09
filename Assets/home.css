@@ -14,6 +14,7 @@ body {
 }
 img {
   max-width: 100%;
+  object-fit: cover;
 }
 main,
 section {
@@ -157,6 +158,10 @@ section {
   bottom: 0;
   background: linear-gradient(90deg, rgba(2, 0, 36, 0.8) 20%, rgba(49, 38, 38, 0.5) 60%, rgba(255, 255, 255, 0.2) 100%);
 }
+.chosen-dish {
+  max-height: 300px;
+  overflow: hidden;
+}
 .chosen-dish .bx {
   color: var(--white);
   font-size: 20px;
@@ -197,6 +202,9 @@ button:last-child {
 .swal2-html-container {
   color: var(--white);
   font-weight: 700;
+}
+.grid {
+  display: grid;
 }
 /* ----------------------*/
 /*        tablet        */
@@ -299,7 +307,6 @@ button:last-child {
   .chosen-dish {
     width: 300px;
     margin-top: 40px;
-    margin-left: 20px;
   }
   .chosen-dish .overlay {
     display: none;
@@ -308,13 +315,14 @@ button:last-child {
     border-radius: 7px;
   }
   .grid {
-    display: grid;
     grid-template-columns: auto 200px auto;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
       "im tj tj"
       "im bt bt"
       "ig . rv";
+    padding: 0 50px;
+    gap: 1rem;
   }
   .chosen-dish {
     grid-area: im;
@@ -345,5 +353,12 @@ button:last-child {
     display: block;
     cursor: not-allowed;
     filter: brightness(0.7);
+  }
+  .review,
+  .ingerdients {
+    margin-top: 3rem !important;
+  }
+  .pad {
+    padding: 0;
   }
 }
