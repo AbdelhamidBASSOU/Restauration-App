@@ -4,226 +4,108 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: var(--main-font);
 }
-html {
-  width: 100%;
-  height: 100%;
-}
+
 body {
   background-color: var(--bg-clr-dark);
+  color: var(--txt-clr);
+  min-height: 100vh;
 }
-
-header {
-  padding: 20px;
-  
-  align-items: center;
+img {
+  max-width: 100%;
 }
-.logo {
-  text-align: center;
-  width: 100%;
-  max-width: 500px;
-  padding-right: 100px;
-}
-
-.input_form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-input {
-  border: 1.5px solid;
-  background-color: var(--bg-clr-light);
-  padding: 20px;
-  margin: 10px 10px 25px;
-  border-radius: 5px;
-  width: 85%;
-  text-align: center;
-}
-
-label {
-  font-size: 19px;
-  text-transform: capitalize;
-  color: var(--white);
-  margin-bottom: 5px;
-  width: 95%;
-  margin: 10px 10px 25px;
-  font-family: var(--main-font);
-}
-
-button {
-  font-family: var(--main-font);
-  background-color: var(--main-clr);
-  font-weight: 1000;
-  width: 85%;
-  padding: 15px;
-  font-size: 20px;
-  color: rgb(7, 7, 7);
-  border-radius: 5px;
-  border: var(--main-clr);
-  text-align: center;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-  padding: 15px;
-  margin: 10px 10px 25px;
-}
-.info {
-  color: var(--white);
-  font-family: var(--main-font);
-}
-.info P {
-  color: var(--white);
-  text-decoration: underline;
-  font-size: 17px;
-  font-family: var(--main-font);
-  margin-bottom: 40px;
-  margin: 10px 10px 15px;
-}
-.box {
-  font-family: var(--headings-font);
+.quote {
   display: none;
 }
-.terminal{
-  padding-left: 70px;
-  
+main {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
- 
-  .het main {
-    margin-top: 10px;
-    width: 100%;
-    padding-left: 100px;
-  }
-  input {
-    border: 1.5px solid;
-    background-color: var(--bg-clr-light);
-    padding: 20px;
-    margin: 10px 10px 15px;
-    border-radius: 8px;
-    width: 70%;
-  }
-  button {
-    font-family: var(--main-font);
-    background-color: var(--main-clr);
-    font-weight: 1000;
-    border-radius: 8px;
-    border: var(--main-clr);
-    text-align: center;
-    width: 70%;
-    padding: 18px;
-  }
-  .logo {
-    margin-left: auto;
-    margin-right: auto;
-    padding-right:200px;
-  }
-  label {
-    font-family: var(--main-font);
-    font-size: 25px;
-    text-transform: capitalize;
-    color: var(--white);
-    margin: 25px 15px 5px;
-  }
-  .info p {
-    font-size: 20px;
-    margin: 5px 15px 5px;
-    text-decoration: underline;
-  }
-  
+label,
+input {
+  display: block;
+  width: 100%;
 }
 
-@media screen and (min-width: 992px) {
-  body {
-    background: rgb(8, 32, 50);
-    background: linear-gradient(
-        49deg,
-        rgba(8, 32, 50, 1) 0%,
-        rgba(8, 32, 50, 0.9940709560191264) 60%,
-        rgba(22, 55, 79, 0.7867880428538603) 100%
-      ),
-      url(../Images/vegitables-bg.jpg);
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      
-  }
-  .logo {
-    width: 300px;
+.login {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.login__img {
+  margin: 2rem auto 4rem;
+  max-width: 200px;
+}
+.mb {
+  margin-bottom: 2rem;
+}
+input {
+  padding: 12px 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 3px;
+  color: var(--white);
+}
+input:focus {
+  outline: 2px solid var(--main-clr);
+}
+label {
+  margin-bottom: 0.7rem;
+}
+input[type="submit"] {
+  background: var(--main-clr);
+  color: var(--bg-clr-dark);
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+[class="login__form--password mb"] {
+  display: flex;
+  position: relative;
+}
+#show--pass {
+  width: 20px;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+[type="password"] {
+  padding-right: 3rem;
+}
+
+@media only screen and (min-width: 930px) {
+  .quote {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 80px;
+    max-width: 800px;
   }
-  .logo img {
-    width: 100%;
-  }
-
-  .het {
-    display: flex;
-  }
-
-  .het header {
-    width: 75%;
-  }
-  .het main {
-    width: 37%;
-    padding-left: 40px;
-  }
-  .box {
-    display: flex;
+  .quote h1 {
     color: var(--white);
-    justify-content: right;
-    font-size: 20px;
-    text-align: right;
-    padding-right: 50px;
-  }
-  .box h1 {
-    font-weight: bold;
     font-family: var(--headings-font);
-    font-size: 48px;
-    text-align: center;
-    width: 80%;
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: left;
+    font-size: 3.5rem;
   }
-  button {
-    font-family: var(--main-font);
-    background-color: var(--main-clr);
-    font-weight: 1000;
-    width: 85%;
-    border-radius: 5px;
-    border: var(--main-clr);
-    text-align: center;
-    padding: 10px;
-    margin: 10px 10px 15px;
+  .quote p {
+    text-align: right;
+    font-style: italic;
+    font-weight: 300;
   }
-
-  input {
-    border: 1.5px solid;
-    background-color: var(--bg-clr-light);
-    padding: 18px;
-    margin: 10px 10px 15px;
-    border-radius: 5px;
-    width: 85%;
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 4rem;
   }
-
-  label {
-    font-family: var(--main-font);
-    font-size: 15px;
-    text-transform: capitalize;
-    color: var(--white);
-    width: 100%;
-    margin: 5px 15px 5px;
+  .login,
+  .quote {
+    margin: 0;
+    flex-basis: 50%;
   }
-  .bText-white {
-    position: absolute;
-    top: 200px;
+  body {
+    background: linear-gradient(49deg, rgba(8, 32, 50, 1) 0%, rgba(8, 32, 50, 0.9940709560191264) 60%, rgba(22, 55, 79, 0.7867880428538603) 100%), url(../Images/vegitables-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
-  .info p {
-    font-size: 10px;
-    margin: 5px 15px 5px;
-    text-decoration: underline;
-  }
-  
 }
