@@ -15,7 +15,8 @@ body {
 img {
   max-width: 100%;
 }
-main,section {
+main,
+section {
   padding: 20px;
   max-width: 900px;
   padding-bottom: 5rem;
@@ -24,7 +25,7 @@ a {
   text-decoration: none;
   color: var(--txt-clr);
 }
-ul{
+ul {
   list-style: none;
 }
 .back {
@@ -50,8 +51,9 @@ ul{
 .absolute {
   position: absolute;
 }
-.hidden, .hid{
- display: none;
+.hidden,
+.hid {
+  display: none;
 }
 .active {
   color: var(--main-clr);
@@ -78,9 +80,9 @@ nav {
 }
 .navLinks {
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 2rem;
 }
-.mhid{
+.mhid {
   display: none;
 }
 /* ---------------- */
@@ -100,11 +102,21 @@ nav {
   cursor: pointer;
   border-radius: 5px;
 }
-.logo {
+.dish__img {
   flex-basis: 80px;
+}
+.dish-count {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+}
+.ratings > h2 {
+  margin-bottom: 2rem;
 }
 .reviews {
   flex-direction: column;
+}
+.review {
+  margin-bottom: 2rem;
 }
 .review-name {
   margin-bottom: 1rem;
@@ -114,11 +126,16 @@ nav {
 }
 .rate-row {
   align-items: center;
+  margin-bottom: 5px;
+}
+.rate-row span {
+  white-space: nowrap;
 }
 .rate-back {
   background: var(--bg-clr-light);
   height: 10px;
-  width: 200px;
+  width: 100%;
+  max-width: 300px;
   border-radius: 10px;
 }
 .rate-range {
@@ -138,12 +155,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 0.8) 20%,
-    rgba(49, 38, 38, 0.5) 60%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.8) 20%, rgba(49, 38, 38, 0.5) 60%, rgba(255, 255, 255, 0.2) 100%);
 }
 .chosen-dish .bx {
   color: var(--white);
@@ -179,10 +191,10 @@ button:last-child {
 .rate {
   background: var(--white);
 }
-.swal2-container.swal2-center>.swal2-popup{
+.swal2-container.swal2-center > .swal2-popup {
   background-color: var(--bg-clr-light);
 }
-.swal2-html-container{
+.swal2-html-container {
   color: var(--white);
   font-weight: 700;
 }
@@ -200,54 +212,78 @@ button:last-child {
     flex-direction: column;
     overflow: hidden;
     white-space: nowrap;
-    transition: .3s ease;
+    transition: 0.3s ease;
     padding: 0;
   }
   nav:hover {
-    width: 170px;
+    width: 200px;
   }
-  nav img{
-    padding: 5px;
+  .logo {
+    text-align: center;
+  }
+  nav img {
     width: 50px;
   }
   .navLinks {
+    margin-top: 1rem;
     flex-direction: column;
+    gap: 0;
   }
-  .navLinks .menu-item{
-    padding: 10px;
+  .menu-item span {
+    font-size: 1rem;
   }
-  .navLinks .menu-item:hover{
+  .menu-item a {
+    align-items: center;
+  }
+  .navLinks .menu-item {
+    padding: 1rem;
+  }
+  .navLinks .menu-item:hover {
     background-color: var(--bg-clr-dark);
   }
   .navLinks .menu-item .bx {
-    font-size: 27px;
-    width: 45px;
+    font-size: 1.7rem;
   }
   .logo {
     margin-top: 1rem;
     display: block;
   }
-  .mhid{
+  .mhid {
     display: inline-block;
   }
   body {
-    margin-left: 90px;
+    margin-left: 5rem;
   }
   .chosen-dish .bx {
     display: none;
   }
 }
+@media only screen and (min-width: 748px) {
+  .dishes {
+    flex-direction: row;
+  }
+}
 /* ------------------------ */
 /*        Desktop          */
 /* -----------------------*/
+
 @media only screen and (min-width: 900px) {
-  .dishes {
-    flex-direction: row;
+  .review {
+    flex-basis: 50%;
   }
   .info .hidden {
     margin-top: 1rem;
     display: block;
     color: var(--main-clr);
+  }
+  .see-dish {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: 0.3s;
+    margin-top: 5px !important;
+  }
+  .see-dish:hover {
+    opacity: 1;
   }
   .reviews {
     flex-direction: row;
@@ -308,6 +344,6 @@ button:last-child {
   .disabled {
     display: block;
     cursor: not-allowed;
-    filter: brightness(.7);
+    filter: brightness(0.7);
   }
 }
