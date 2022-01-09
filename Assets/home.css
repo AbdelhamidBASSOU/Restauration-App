@@ -276,6 +276,9 @@ button:last-child {
 /* -----------------------*/
 
 @media only screen and (min-width: 900px) {
+  main {
+    padding-bottom: 1rem;
+  }
   .review {
     flex-basis: 50%;
   }
@@ -304,10 +307,6 @@ button:last-child {
   .pad .hidden {
     display: block;
   }
-  .chosen-dish {
-    width: 300px;
-    margin-top: 40px;
-  }
   .chosen-dish .overlay {
     display: none;
   }
@@ -315,13 +314,13 @@ button:last-child {
     border-radius: 7px;
   }
   .grid {
-    grid-template-columns: auto 200px auto;
+    grid-template-columns: 300px 200px auto;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
       "im tj tj"
       "im bt bt"
       "ig . rv";
-    padding: 0 50px;
+    padding: 2rem;
     gap: 1rem;
   }
   .chosen-dish {
@@ -342,9 +341,6 @@ button:last-child {
     gap: 1rem;
     max-width: 600px;
   }
-  .tj {
-    margin-top: 15px;
-  }
   button:first-child {
     width: auto;
     flex-basis: 60%;
@@ -354,7 +350,7 @@ button:last-child {
     cursor: not-allowed;
     filter: brightness(0.7);
   }
-  .review,
+  .rev-tajin,
   .ingerdients {
     margin-top: 3rem !important;
   }
