@@ -41,7 +41,7 @@ a {
   text-decoration: none;
   color: var(--txt-clr);
 }
-ul{
+ul {
   list-style: none;
 }
 .back {
@@ -68,7 +68,7 @@ ul{
   position: absolute;
 } */
 .hidden {
- display: none;
+  display: none;
 }
 .active {
   color: var(--main-clr);
@@ -97,12 +97,14 @@ nav {
   justify-content: space-around;
   font-size: 20px;
 }
-.mhid, .hidden{
+.mhid,
+.hidden {
   display: none;
 }
 /* tablet */
 @media only screen and (min-width: 600px) {
-  nav {
+  nav,
+  .hid {
     top: 0;
     left: 0;
     width: 60px;
@@ -111,34 +113,43 @@ nav {
     flex-direction: column;
     overflow: hidden;
     white-space: nowrap;
-    transition: .3s ease;
+    transition: 0.3s ease;
     padding: 0;
   }
   nav:hover {
-    width: 170px;
+    width: 200px;
   }
-  nav img{
-    padding: 5px;
+  .logo {
+    text-align: center;
+  }
+  nav img {
     width: 50px;
   }
   .navLinks {
+    margin-top: 1rem;
     flex-direction: column;
+    gap: 0;
   }
-  .navLinks .menu-item{
-    padding: 10px;
+  .menu-item span {
+    font-size: 1rem;
   }
-  .navLinks .menu-item:hover{
+  .menu-item a {
+    align-items: center;
+  }
+  .navLinks .menu-item {
+    padding: 1rem;
+  }
+  .navLinks .menu-item:hover {
     background-color: var(--bg-clr-dark);
   }
   .navLinks .menu-item .bx {
-    font-size: 27px;
-    width: 45px;
+    font-size: 1.7rem;
   }
   .logo {
     margin-top: 1rem;
     display: block;
   }
-  .mhid{
+  .mhid {
     display: inline-block;
   }
   /* body{
