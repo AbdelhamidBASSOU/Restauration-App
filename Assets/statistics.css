@@ -86,7 +86,8 @@ nav {
 }
 /* tablet */
 @media only screen and (min-width: 550px) {
-  nav {
+  nav,
+  .hid {
     top: 0;
     left: 0;
     width: 60px;
@@ -99,24 +100,33 @@ nav {
     padding: 0;
   }
   nav:hover {
-    width: 170px;
+    width: 200px;
+  }
+  .logo {
+    text-align: center;
   }
   nav img {
-    padding: 5px;
     width: 50px;
   }
   .navLinks {
+    margin-top: 1rem;
     flex-direction: column;
+    gap: 0;
+  }
+  .menu-item span {
+    font-size: 1rem;
+  }
+  .menu-item a {
+    align-items: center;
   }
   .navLinks .menu-item {
-    padding: 10px;
+    padding: 1rem;
   }
   .navLinks .menu-item:hover {
     background-color: var(--bg-clr-dark);
   }
   .navLinks .menu-item .bx {
-    font-size: 27px;
-    width: 45px;
+    font-size: 1.7rem;
   }
   .logo {
     margin-top: 1rem;
