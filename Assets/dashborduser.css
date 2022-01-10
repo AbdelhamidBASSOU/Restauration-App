@@ -41,11 +41,7 @@ a {
   text-decoration: none;
   color: var(--txt-clr);
 }
-<<<<<<< HEAD
-ul{
-=======
 ul {
->>>>>>> a57db993df80d6e35b4fabd3ead8e7bd9d1e45e4
   list-style: none;
 }
 .back {
@@ -72,11 +68,7 @@ ul {
   position: absolute;
 } */
 .hidden {
-<<<<<<< HEAD
- display: none;
-=======
   display: none;
->>>>>>> a57db993df80d6e35b4fabd3ead8e7bd9d1e45e4
 }
 .active {
   color: var(--main-clr);
@@ -105,22 +97,14 @@ nav {
   justify-content: space-around;
   font-size: 20px;
 }
-<<<<<<< HEAD
-.mhid, .hidden{
-=======
 .mhid,
 .hidden {
->>>>>>> a57db993df80d6e35b4fabd3ead8e7bd9d1e45e4
   display: none;
 }
 /* tablet */
 @media only screen and (min-width: 600px) {
-<<<<<<< HEAD
-  nav {
-=======
   nav,
   .hid {
->>>>>>> a57db993df80d6e35b4fabd3ead8e7bd9d1e45e4
     top: 0;
     left: 0;
     width: 60px;
@@ -129,30 +113,6 @@ nav {
     flex-direction: column;
     overflow: hidden;
     white-space: nowrap;
-<<<<<<< HEAD
-    transition: .3s ease;
-    padding: 0;
-  }
-  nav:hover {
-    width: 170px;
-  }
-  nav img{
-    padding: 5px;
-    width: 50px;
-  }
-  .navLinks {
-    flex-direction: column;
-  }
-  .navLinks .menu-item{
-    padding: 10px;
-  }
-  .navLinks .menu-item:hover{
-    background-color: var(--bg-clr-dark);
-  }
-  .navLinks .menu-item .bx {
-    font-size: 27px;
-    width: 45px;
-=======
     transition: 0.3s ease;
     padding: 0;
   }
@@ -184,17 +144,12 @@ nav {
   }
   .navLinks .menu-item .bx {
     font-size: 1.7rem;
->>>>>>> a57db993df80d6e35b4fabd3ead8e7bd9d1e45e4
   }
   .logo {
     margin-top: 1rem;
     display: block;
   }
-<<<<<<< HEAD
-  .mhid{
-=======
   .mhid {
->>>>>>> a57db993df80d6e35b4fabd3ead8e7bd9d1e45e4
     display: inline-block;
   }
   /* body{

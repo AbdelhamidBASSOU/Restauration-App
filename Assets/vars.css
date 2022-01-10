@@ -11,12 +11,7 @@
   --txt-clr: rgba(255, 255, 255, 0.75);
 } */
 
-<<<<<<< HEAD
-:root
-{
-=======
 :root {
->>>>>>> a57db993df80d6e35b4fabd3ead8e7bd9d1e45e4
   --main-clr: #ffc100;
   --bg-clr-dark: #082032;
   --bg-clr-light: #16374f;
@@ -26,16 +21,8 @@
   --black: #000000;
 
   --txt-clr: rgba(255, 255, 255, 0.75);
-<<<<<<< HEAD
-  --trash-clr:#F26F49;
-  --edit-clr:#4986F2;
-  --txt-clr: rgba(255, 255, 255, 0.75);
-
-
-=======
   --trash-clr: #f26f49;
   --edit-clr: #4986f2;
->>>>>>> a57db993df80d6e35b4fabd3ead8e7bd9d1e45e4
 
   --main-font: "Roboto", sans-serif;
   --headings-font: "Poppins", sans-serif;
