@@ -81,7 +81,9 @@ input[type="submit"] {
   color: var(--white);
   display: block;
 }
-
+.quote img {
+  padding-top: 3rem;
+}
 @media only screen and (min-width: 930px) {
   .quote {
     display: block;
