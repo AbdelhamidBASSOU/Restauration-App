@@ -86,7 +86,12 @@ nav {
 }
 /* tablet */
 @media only screen and (min-width: 550px) {
+<<<<<<< HEAD
   nav {
+=======
+  nav,
+  .hid {
+>>>>>>> a57db993df80d6e35b4fabd3ead8e7bd9d1e45e4
     top: 0;
     left: 0;
     width: 60px;
@@ -99,6 +104,7 @@ nav {
     padding: 0;
   }
   nav:hover {
+<<<<<<< HEAD
     width: 170px;
   }
   nav img {
@@ -110,13 +116,40 @@ nav {
   }
   .navLinks .menu-item {
     padding: 10px;
+=======
+    width: 200px;
+  }
+  .logo {
+    text-align: center;
+  }
+  nav img {
+    width: 50px;
+  }
+  .navLinks {
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 0;
+  }
+  .menu-item span {
+    font-size: 1rem;
+  }
+  .menu-item a {
+    align-items: center;
+  }
+  .navLinks .menu-item {
+    padding: 1rem;
+>>>>>>> a57db993df80d6e35b4fabd3ead8e7bd9d1e45e4
   }
   .navLinks .menu-item:hover {
     background-color: var(--bg-clr-dark);
   }
   .navLinks .menu-item .bx {
+<<<<<<< HEAD
     font-size: 27px;
     width: 45px;
+=======
+    font-size: 1.7rem;
+>>>>>>> a57db993df80d6e35b4fabd3ead8e7bd9d1e45e4
   }
   .logo {
     margin-top: 1rem;
