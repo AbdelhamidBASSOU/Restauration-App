@@ -1,0 +1,92 @@
+@import url(../Assets/vars.css);
+/* -------------------- */
+/*        resets        */
+/* -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+body {
+  background: var(--bg-clr-dark);
+  color: var(--txt-clr);
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+main,
+section {
+  padding: 20px;
+  max-width: 900px;
+  padding-bottom: 5rem;
+}
+a {
+  text-decoration: none;
+  color: var(--txt-clr);
+}
+ul {
+  list-style: none;
+}
+.back {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 6;
+}
+/* ---------------- */
+/*  general styles  */
+/* ---------------- */
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+.upper {
+  text-transform: uppercase;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.hidden,
+.hid {
+  display: none;
+}
+.active {
+  color: var(--main-clr);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--headings-font);
+  color: var(--white);
+  margin-bottom: 10px;
+}
+i {
+  font-size: 1.5rem;
+}
+/* ---------------- */
+/*        nav       */
+/* ---------------- */
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-clr-light);
+  padding: 10px;
+  z-index: 10;
+}
+.navLinks {
+  justify-content: space-around;
+  font-size: 2rem;
+}
+.mhid {
+  display: none;
+}
